@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.chatBox {
+    width: 100%;
+    height: 100vh;
+    /*background-color: rgb(255, 255, 255);*/
+    border: 5px solid black;
+    border-radius: 50px;
+    overflow: auto;
+}
+.chatBox::-webkit-scrollbar {
+    width: 12px;
+}
+
+.chatBox h1 {
+    text-align: center;
+    /*background-image: linear-gradient(to right, #FF4B2B, #FF416C);
+  	background-image: linear-gradient(to right, #FF4B2B, #FF416C);
+  	color:transparent;
+  	-webkit-background-clip: text;
+    background-clip: text;*/
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    margin-top: 15px;
+}
+/*.chatBox h1 i {
+    margin-right: 5px;
+}*/
+.fa-sign-out {
+    color: black;
+}
+.fa-sign-out:hover {
+    color: blue;
+}
+.inputSide {
+    position: sticky;
+    bottom: 10px;
+    left: 30px;
+    width: 95%;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: white;
+}
+.inputSide #message {
+    margin-right: 5px;
+}
+li {
+    list-style-type: none;
+    padding: 5px;
+    min-width: auto;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+.singleMessage {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.singleMessage .sentTime {
+    margin-right: 5px;
+}
+.alignRight {
+    text-align: right;
+    padding: 5px;
+}
+.alignLeft {
+    text-align: left;
+    padding: 5px;
+    margin-left: 1px;
+}
+.alignRight .senderName {
+    font-weight: bold;
+    color: green;
+}
+.alignRight .senderMessage {
+    text-align: left;
+}
+.alignLeft .senderName {
+    font-weight: bold;
+    color: blue;
+}
+.swal-overlay {
+    background-color: rgb(109, 102, 102);
+}
+@media screen and (max-width: 1125px) {
+    .chatBox h1{
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 350px) {
+    .chatBox h1{
+        font-size: large;
+    }
+}
+@media screen and (max-width: 990px) {
+    .inputSide{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .inputSide{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .inputSide{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 332px) {
+    .singleMessage{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 292px) {
+    .singleMessage{
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 1125px) {
+    .chatBox h1 {
+        height: 50px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .chatBox h1 {
+        height: 70px;
+    }
+}

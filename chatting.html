@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chat App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDVIm7WNcQ-sSId3JbPzS3h96xPbhnOns4",
+            authDomain: "chatapp-js-auth.firebaseapp.com",
+            databaseURL: "https://chatapp-js-auth.firebaseio.com",
+            projectId: "chatapp-js-auth",
+            storageBucket: "chatapp-js-auth.appspot.com",
+            messagingSenderId: "907909921080",
+            appId: "1:907909921080:web:02eca8e7ed6f59195829cd",
+            measurementId: "G-ZE7503RQ8Z"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+    </script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./chatting.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="chatBox">
+                    <h1 class="text-uppercase p-2">
+                        <i class="fa fa-envelope"></i>
+                        Chat App Using JS
+                        <a class="social" onclick="logOutFunc();"><i class="fa fa-sign-out"></i></a><hr />
+                    </h1>
+                    <ul id="messages"></ul>
+                    <div class="d-flex inputSide">
+                        <input type="text" name="messgae" id="message" placeholder="Enter Your Message"
+                            class="form-control" />
+                        <button onclick="sendMessage();" class="btn btn-warning rounded-circle">
+                            <i class="fa fa-location-arrow p-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <script src='./app.js'></script>
+</body>
+
+</html>
